@@ -2,7 +2,8 @@ import java.util.Scanner;
 public class Main3 {
 
 	public static void main(String[] args) {
-		perimetroRettangolo();
+		//perimetroRettangolo();
+		pariDispari();
 	}
 	public static void perimetroRettangolo() {
 		Scanner in = new Scanner(System.in);
@@ -16,4 +17,18 @@ public class Main3 {
 		in.close();
 		
 	}
+	
+	public static void pariDispari() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Inserisci un numero:");
+        int numero = in.nextInt();
+
+        if (numero % 2 == 0) {
+            System.out.println(0);
+        }else {
+            System.out.println(1);
+        }
+        
+        in.close();
+    }
 }
